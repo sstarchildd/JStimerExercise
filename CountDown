@@ -1,0 +1,13 @@
+ function countDown(time){
+    let interval = setInterval(function(){
+      time--;
+      if(time <= 0){
+        clearInterval(interval);
+        console.log('DONE!');
+      }
+      else {
+        console.log(time);
+      }
+  
+    },1000)
+  }
